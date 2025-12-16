@@ -3,7 +3,7 @@ Turns some of the Hemocell functions to run-time
 These files are some of the changes I did in the Hemocell (https://github.com/UvaCsl/HemoCell).
 
 Files in the "sourceFiles" turns some of the compile-time functions into run-time functions such as tauBend, and includes a scale function of RBC membrane forces. 
-In hemocell.cpp only a repulsion function added. Repulsion can be activated or disabled in the config.xml (see the case files) and it can be applied every or every "x" iterations.
+In hemocell.cpp only a repulsion function added. Repulsion can be activated or disabled in the config.xml (see the case files) and it can be applied every "x" iterations.
 
 Mechanics files also includes an attempt to include Skalak model, I didn't finish it.
 If you want to include that, you can use the functions as a starting point. Just uncomment the Skalak constants, and comment the current ones.
