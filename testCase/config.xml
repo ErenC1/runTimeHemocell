@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<hemocell>
+
+<preInlet>
+  <parameters>
+    <lengthN> 60  </lengthN>
+    <Re> 0.06782 </Re> <!--0.03832=0.2 mm/s, 0.2083=1 mm/s-->
+    <pABx>4</pABx>
+    <pABy>1</pABy>
+    <pABz>1</pABz>
+  </parameters>
+</preInlet>
+
+
+<parameters>
+    <warmup> 50000  </warmup> 
+    <outputDirectory> 4RBC_v3 </outputDirectory> 
+</parameters>
+
+<UDV>
+    <caseName> step40_N1O3S4 </caseName>
+    <stepFunction> 1 </stepFunction>            <!-- works only if its different than 1-->
+    <sinusoidal> notTrue </sinusoidal>          <!-- activates sinusoidal profile with "True"-->
+    <frequency> 3 </frequency>                  <!--frequency with respect to latestTime, not physical time-->
+    <amplitude> 0.001 </amplitude>              <!--amplitude that oscillates around "1"-->
+    <stepActive> 0 </stepActive>                <!--Step function starting iter-->
+    <stepDeActive> 0 </stepDeActive>            <!--Step function starting iter-->
+    <RDW> notTrue </RDW>                        <!--Activates RDW-->
+    <PLT> notTrue </PLT>                        <!--Activates PLT-->
+</UDV>
+
+<ibm>
+    <stepMaterialEvery> 40 </stepMaterialEvery> 
+    <stepParticleEvery> 5 </stepParticleEvery> 
+<domain>
+    <geometry> n1_o3s1RR_lab_blend.stl </geometry>
+    <fluidEnvelope> 2 </fluidEnvelope>
+    <rhoP> 1000 </rhoP>   
+    <nuP> 1e-6 </nuP>   
+    <dx> 0.25e-6 </dx> <!--0.25e-6--> 
+    <dt> 1e-8 </dt> 
+    <refDir> 1 </refDir>   
+    <refDirN> 41 </refDirN>  
+    <blockSize> -1 </blockSize>
+    <kBT> 4.100531391e-21 </kBT>    <!-- in SI, m2 kg s-2 (or J) for T=300 -->
+    <particleEnvelope> 40 </particleEnvelope>
+    <RepulsionActive> notTrue </RepulsionActive> <!-- activates repulsion with "True"-->
+    <kRep> 1e-10 </kRep>             <!-- Repulsion Constant -->
+    <kBRep> 1e-10 </kBRep>           <!-- Boundary Repulsion Clsonstant -->
+    <RepCutoff> 1.4 </RepCutoff>      <!-- RepulsionCutoff, LU -->
+    <repulsionStep> 40 </repulsionStep>
+    <mABx>20</mABx>
+    <mABy>1</mABy>
+    <mABz>1</mABz>
+</domain>
+
+<sim>
+    <tmax> 5000000 </tmax> 
+    <tmeas> 50000 </tmeas> 
+    <tcsv>  5000 </tcsv> 
+    <tcheckpoint> 1000000 </tcheckpoint> 
+</sim>
+
+</hemocell>
