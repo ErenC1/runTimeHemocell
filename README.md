@@ -18,5 +18,6 @@ RDW (red cell distribution width) and PLT can be activated in config.xml, curren
 
 Liked HemoCell and used these functions? Please Cite the following publications:
 
-Závodszky, G., Van Rooij, B., Azizi, V., & Hoekstra, A. (2017). Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. Frontiers in physiology, 8, 563.
+Závodszky, G., Van Rooij, B., Azizi, V., & Hoekstra, A. (2017). Cellular level in-silico modeling of blood rheology with an improved material model for red blood cells. Frontiers in physiology, 8, 563. https://doi.org/10.3389/fphys.2017.00563
+
 Çolak, E., Ekici, Ö., & Erdener, Ş. E. (2025). In Silico Investigation of the RBC Velocity Fluctuations in Ex Vivo Capillaries. Applied Sciences, 15(14), 7796. https://doi.org/10.3390/app15147796
