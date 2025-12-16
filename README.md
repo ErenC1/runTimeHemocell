@@ -10,7 +10,7 @@ If you want to include that, you can use the functions as a starting point. Just
 
 Files in the "case" is an example test case.
 
-Step - Sinusoidal functions are NOT VALIDATED. They are achieved by changing outlet density, so larger values will probably results in crash, because its not a good way to do it.
+Step - Sinusoidal functions are NOT VALIDATED. They are achieved by changing outlet density, so larger values will probably result in crash, because its not a good way to do it.
 
 Limiters and scale can be adjusted in RBC.xml
 RDW (red cell distribution width) and PLT can be activated in config.xml, currently supports 3 different diameters, you need to create corresponding xml and pos files (such as LRBC.xml, PLT.xml).
