@@ -609,7 +609,7 @@ void HemoCell::sanityCheck() {
   //int env_min_width = (12e-6 /param::dx)+1;
   int env_width = cellfields->immersedParticles->getMultiBlockManagement().getEnvelopeWidth();
   //if (env_width < env_min_width) {
-  pcout << "Envelope width is: " << env_width << " LU, (" << env_width*param::dx*1e6 << " µm) " << "Make sure envelope is around 1.5x of the D_rbc" << endl;
+  pcout << "Envelope width is: " << env_width << " LU, (" << env_width*param::dx*1e6 << " Âµm) " << "Make sure envelope is around 1.5x of the D_rbc" << endl;
   
   // Material sanity
   if (boundaryRepulsionEnabled) {
